@@ -1,6 +1,6 @@
 import requests
 
-token = '5e8388ec4db8b87a23bfe0fc4384aec8' # Token
+token = '' # Token
 url = 'https://api.pokemonbattle.me/v2'   # URL
 
 responce_add_pokemon = requests.post (f'{url}/pokemons', headers={'trainer_token' : token}, json={
