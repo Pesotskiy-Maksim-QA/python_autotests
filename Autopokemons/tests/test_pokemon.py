@@ -11,6 +11,4 @@ def test_status_code_trainers():
 def test_trainer_name():
     token = ''
     response = requests.get('https://api.pokemonbattle.me/v2/trainers', params={'trainer_id': 397})
-    response_body = response.json()
-    #assert response.status_code == 200
-    assert response_body == 'Максимус'
+    assert response.json() ['data'][0]['trainer_name']== 'Максимус'
